@@ -1,0 +1,446 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Montserrat", serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* CSS MAIN */
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 5%;
+}
+
+.nav-groceries {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-groceries .logo img {
+  max-width: 100%;
+  width: 100px;
+}
+
+.nav-groceries .nav-links {
+  display: flex;
+  gap: 5px;
+}
+
+.nav-groceries .nav-links a {
+  padding: 10px;
+}
+
+.nav-groceries .nav-links a:hover {
+  color: rgb(219, 0, 139);
+}
+
+.content .judul {
+  text-align: center;
+  padding: 50px;
+}
+
+.box-flex-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-flex-header .box-one {
+  flex: 1 0 25%;
+  padding: 0 25px;
+}
+
+.box-flex-header .box-one .image-1 .image-on {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.box-flex-header .box-one .image-1 .img-text {
+  padding: 10px 10px 10px 20px;
+  font-size: 12px;
+}
+
+.box-flex-header .box-one .image-1 .users {
+  display: flex;
+  padding: 10px 10px 10px 20px;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+}
+
+.box-flex-header .box-one .image-1 .user-img {
+  display: inline-block;
+  position: relative;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.box-flex-header .box-one .image-1 .user-img img {
+  width: auto;
+  height: 100%;
+  margin: 3px 0 0 5px;
+}
+
+.box-flex-header .box-one .image-1 .users-info {
+  margin-left: 20px;
+}
+
+.box-flex-header .box-one .image-1 .users-info p:first-child {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.box-flex-header .box-two {
+  background-color: rgb(235, 245, 255);
+  color: black;
+  border-radius: 10px;
+  flex: 1 0 25%;
+  padding: 25px;
+}
+
+.box-flex-header .box-two .box-info {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.box-flex-header .box-two .box-form .contact-form > div {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-flex-header .box-two .box-form .contact-form label {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.box-flex-header .box-two .box-form .contact-form div > input,
+select {
+  padding: 10px;
+}
+
+.box-flex-header .box-two .box-form .submit {
+  border: none;
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.box-flex-header .box-two .box-form .submit:hover {
+  background-color: rgb(219, 0, 139);
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+
+.box-package > .judul {
+  background-color: rgb(235, 245, 255);
+  margin: 150px 0 50px 0;
+}
+
+.box-flex-package {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 5%;
+}
+
+.box-flex-package .card-package {
+  flex: 30%;
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  height: 200px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.box-flex-package .card-package::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(235, 245, 255);
+  height: 10px;
+  left: 0;
+  top: 190px;
+  width: 0;
+  transform: scaleX(0);
+  transition: 0.8s all ease;
+}
+
+.box-flex-package .card-package:hover {
+  cursor: pointer;
+}
+
+.box-flex-package .card-package:hover::before {
+  width: 100%;
+  transform: scaleX(0.5);
+}
+
+.box-flex-package .card-package .card-icon .subcard-icon {
+  background-color: rgb(235, 245, 255);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 2px;
+}
+
+.box-flex-package .card-package .card-icon .subcard-icon img {
+  width: 20px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-flex-package .card-package .card-text {
+  font-size: 12px;
+}
+
+.call-action {
+  padding: 50px;
+}
+
+.call-action > .judul {
+  padding: 0;
+  padding-bottom: 50px;
+}
+
+.call-action .button {
+  text-align: center;
+}
+
+.call-action .btn {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  width: 30%;
+}
+
+.call-action .btn:hover {
+  cursor: pointer;
+  background-color: rgb(219, 0, 139);
+  transition: 0.3s all ease;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: rgb(235, 245, 255);
+  font-size: 14px;
+}
+
+.footer .footer-name h4 {
+  margin-top: 0;
+}
+
+.footer .footer-text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 40%;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-groceries {
+    flex-direction: column;
+  }
+
+  .nav-groceries .nav-links {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-groceries .nav-links a {
+    background-color: rgb(235, 245, 255);
+    width: 100%;
+    text-align: center;
+  }
+
+  .content .judul > p {
+    font-size: 14px;
+  }
+
+  .content .box-flex-header {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .content .box-flex-header .box-one .img-text {
+    font-size: 16px;
+  }
+
+  .content .box-flex-header .box-one .users .users-info > p {
+    font-size: 16px;
+  }
+
+  .box-flex-package .card-package {
+    flex: 100%;
+  }
+
+  .box-flex-package .card-package .card-text {
+    font-size: 16px;
+  }
+
+  .box-flex-package .card-package .card-icon .subcard-icon {
+    margin-top: 10px;
+  }
+
+  .call-action .button .btn {
+    width: 50%;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+
+  .footer .footer-name h4 {
+    margin-top: 0;
+  }
+}
