@@ -444,3 +444,55 @@ select {
     margin-top: 0;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .content .box-header > .judul {
+    margin-bottom: 30px;
+  }
+  .box-flex-header .box-one {
+    flex: 1 0 50%;
+  }
+  .box-flex-header .box-one .image-1 .image-on {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .box-flex-header .box-one .image-1 .img-text p {
+    font-size: 18px;
+  }
+  .content .box-flex-header .box-one .users .users-info > p {
+    font-size: 16px;
+  }
+  .box-flex-header .box-one .image-1 > .users,
+  .img-text {
+    margin: 20px 0;
+  }
+  .box-flex-header .box-one .image-1 .user-img {
+    width: 80px;
+    height: 80px;
+  }
+  .box-flex-header .box-one .image-1 .user-img img {
+    margin: 4px 0 0 10px;
+  }
+  .box-flex-header .box-two {
+  }
+  .box-flex-header .box-two .box-info {
+    font-size: 16px;
+  }
+  .box-flex-header .box-two .box-form .contact-form label {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  .box-flex-package .card-package .card-icon .subcard-icon {
+    margin-top: 7px;
+  }
+  .box-flex-package .card-package .card-text {
+    font-size: 16px;
+  }
+  .footer {
+    flex-wrap: wrap;
+  }
+  .footer .footer-text {
+    width: 20%;
+  }
+}
